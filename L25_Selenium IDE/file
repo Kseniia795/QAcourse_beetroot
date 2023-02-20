@@ -1,0 +1,324 @@
+{
+  "id": "8febaf8e-2245-47d4-a154-1cda88d681d4",
+  "version": "2.0",
+  "name": "Homework_Lesson25",
+  "url": "https://rozetka.com.ua/",
+  "tests": [{
+    "id": "ad182f60-dc2e-4787-8faf-5b704f301f18",
+    "name": "test2_recorded",
+    "commands": [{
+      "id": "b3e5e413-50dc-4677-aad8-2b1f05fd01cb",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a37df2e2-7163-4b2e-92b1-6caed16f7ad1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c8ce6f1-a22a-4cf5-b0da-f1ed14a842cf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Бытовая техника",
+      "targets": [
+        ["linkText=Бытовая техника", "linkText"],
+        ["css=.menu-categories_type_main > .menu-categories__item:nth-child(4) > .menu-categories__link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Бытовая техника')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://bt.rozetka.com.ua/')])[2]", "xpath:href"],
+        ["xpath=//rz-sidebar-fat-menu/div/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36adc383-3a08-4bdf-b269-8bdaf2543640",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Холодильники",
+      "targets": [
+        ["linkText=Холодильники", "linkText"],
+        ["css=.ng-star-inserted:nth-child(3) > .portal-section .portal-grid__cell:nth-child(1) .tile-cats__item:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Холодильники')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://bt.rozetka.com.ua/refrigerators/c80125/')]", "xpath:href"],
+        ["xpath=//rz-list-tile/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Холодильники')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "47d70d2d-9250-4f81-8bea-76bcb9bfe212",
+      "comment": "choose 'Beko' brand ",
+      "command": "click",
+      "target": "css=rz-filter-section-autocomplete > .checkbox-filter:nth-child(1) > .checkbox-filter__item:nth-child(2) > .checkbox-filter__link",
+      "targets": [
+        ["css=rz-filter-section-autocomplete > .checkbox-filter:nth-child(1) > .checkbox-filter__item:nth-child(2) > .checkbox-filter__link", "css:finder"],
+        ["xpath=//a[contains(@href, '/refrigerators/c80125/producer=beko/')]", "xpath:href"],
+        ["xpath=//rz-filter-section-autocomplete/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aabd4da4-2beb-4f93-b13f-11753bb0686e",
+      "comment": "select the item",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Холодильник BEKO RCNA406E35ZXB')]",
+      "targets": [
+        ["css=.catalog-grid__cell:nth-child(2) .goods-tile__title", "css:finder"],
+        ["xpath=//li[2]/rz-catalog-tile/app-goods-tile-default/div/div[2]/a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Холодильник BEKO RCNA406E35ZXB')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebdd3841-8a33-4975-b473-298ac6dbc371",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//*[@id=\"#scrollArea\"]/div[1]/div[2]/rz-product-main-info/rz-seller/div/div/div[1]/rz-seller-title/p",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e90f0b2-ef8b-4207-8d0b-2b2a653becfc",
+      "comment": "",
+      "command": "assertText",
+      "target": "//*[@id=\"#scrollArea\"]/div[1]/div[1]/div/rz-product-characteristics-list/section/dl/div[2]/dt/span",
+      "targets": [],
+      "value": "Тип холодильника"
+    }, {
+      "id": "d4e49374-3a5c-4a00-96c4-563840323768",
+      "comment": "click on Characteristics tab",
+      "command": "click",
+      "target": "linkText=Характеристики",
+      "targets": [
+        ["linkText=Характеристики", "linkText"],
+        ["css=.tabs__item:nth-child(2) > .tabs__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Характеристики')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://bt.rozetka.com.ua/beko_rcna406e35zxb/p230696959/characteristics/')]", "xpath:href"],
+        ["xpath=//rz-tabs/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Характеристики')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "57caa9ba-8481-490d-b92f-5fd2fb23b820",
+      "comment": "reviews",
+      "command": "click",
+      "target": "css=.tabs__item:nth-child(3) > .tabs__link",
+      "targets": [
+        ["css=.tabs__item:nth-child(3) > .tabs__link", "css:finder"],
+        ["xpath=(//a[contains(@href, 'https://bt.rozetka.com.ua/beko_rcna406e35zxb/p230696959/comments/')])[2]", "xpath:href"],
+        ["xpath=//div/div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28a687d8-1003-4652-a703-edef123447b2",
+      "comment": "questions",
+      "command": "click",
+      "target": "css=.tabs__item:nth-child(4) .tabs__link-text",
+      "targets": [
+        ["css=.tabs__item:nth-child(4) .tabs__link-text", "css:finder"],
+        ["xpath=//div/div/ul/li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'17')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0e9fc1e-0edf-4349-9187-9b3826ffae03",
+      "comment": "video",
+      "command": "click",
+      "target": "linkText=Видео",
+      "targets": [
+        ["linkText=Видео", "linkText"],
+        ["css=.tabs__item:nth-child(5) > .tabs__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Видео')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://bt.rozetka.com.ua/beko_rcna406e35zxb/p230696959/review/')]", "xpath:href"],
+        ["xpath=//div/div/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Видео')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c1a7d60-02b2-4945-8c68-1b4e33df71d0",
+      "comment": "photos",
+      "command": "click",
+      "target": "linkText=Фото",
+      "targets": [
+        ["linkText=Фото", "linkText"],
+        ["css=.tabs__item:nth-child(6) > .tabs__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Фото')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://bt.rozetka.com.ua/beko_rcna406e35zxb/p230696959/photo/')]", "xpath:href"],
+        ["xpath=//div/div/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Фото')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "32c97603-3eaa-48ce-af80-9be774afb926",
+      "comment": "buy",
+      "command": "click",
+      "target": "css=.buy-button > svg",
+      "targets": [
+        ["css=.buy-button > svg", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9438b9bf-4cc4-420f-b83b-11f5beff5226",
+    "name": "test3_manual",
+    "commands": [{
+      "id": "44829acc-5572-4d50-95b0-986256c30cad",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d441baaa-0cfe-4c9d-9e51-ba298dff63ab",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f15a1a4f-b3a2-4d81-8744-fe0ba764fd99",
+      "comment": "",
+      "command": "click",
+      "target": "//body/app-root[1]/div[1]/div[1]/rz-main-page[1]/div[1]/aside[1]/rz-main-page-sidebar[1]/div[1]/rz-sidebar-fat-menu[1]/div[1]/ul[1]/li[1]/a[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dfa97c12-b29b-49fb-88f4-7c1cfbdcb269",
+      "comment": "",
+      "command": "click",
+      "target": "//body/app-root[1]/div[1]/div[1]/rz-super-portal[1]/div[1]/main[1]/section[1]/div[2]/rz-dynamic-widgets[1]/rz-widget-list[1]/section[1]/ul[1]/li[1]/rz-list-tile[1]/div[1]/a[1]/img[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43ac8086-5301-4c2f-9f09-e901400711b1",
+      "comment": "",
+      "command": "type",
+      "target": "//body/app-root[1]/div[1]/div[1]/rz-category[1]/div[1]/main[1]/rz-catalog[1]/div[1]/div[1]/aside[1]/rz-filter-stack[1]/div[2]/div[1]/rz-filter-searchline[1]/div[1]/input[1]",
+      "targets": [],
+      "value": "hp"
+    }, {
+      "id": "59d9ee8a-8451-4236-a034-1c269ed9f2f4",
+      "comment": "",
+      "command": "click",
+      "target": "//body/app-root[1]/div[1]/div[1]/rz-category[1]/div[1]/main[1]/rz-catalog[1]/div[1]/div[1]/aside[1]/rz-filter-stack[1]/div[2]/div[1]/rz-scrollbar[1]/div[1]/div[1]/div[1]/div[1]/rz-filter-section-autocomplete[1]/ul[2]/li[1]/a[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "695e50e5-5154-4c75-826a-6080a9a0a8a4",
+      "comment": "",
+      "command": "assertText",
+      "target": "//span[contains(text(),'Алфавитный указатель')]",
+      "targets": [],
+      "value": "Алфавитный указатель"
+    }, {
+      "id": "19eefd4c-d7ca-4419-a844-a127c1d74309",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//button[@id='fat-menu']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b18809da-c733-4ce9-bd43-316e843d5a3a",
+    "name": "test1",
+    "commands": []
+  }, {
+    "id": "4b4184db-015c-4be8-afe6-36418fd48388",
+    "name": "test4",
+    "commands": []
+  }, {
+    "id": "1a0d5eb9-8c5c-4504-ad8e-f25e04a51def",
+    "name": "jfjksdhfksjdf",
+    "commands": []
+  }, {
+    "id": "67d2bb81-26fd-4577-99db-63279c68e34c",
+    "name": "test2_recorded (1)",
+    "commands": [{
+      "id": "5fb01d43-a63a-4f44-a3cc-db920c677403",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f603384b-9f90-4914-9847-9bbfbb2e534f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6519e62c-e8bf-4212-88f5-fe11bdb4d427",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ноутбуки и компьютеры",
+      "targets": [
+        ["linkText=Бытовая техника", "linkText"],
+        ["css=.menu-categories_type_main > .menu-categories__item:nth-child(4) > .menu-categories__link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Бытовая техника')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://bt.rozetka.com.ua/')])[2]", "xpath:href"],
+        ["xpath=//rz-sidebar-fat-menu/div/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8933198-f710-4aa5-b564-58fd573a2fe4",
+      "comment": "",
+      "command": "click",
+      "target": "//body/app-root[1]/div[1]/div[1]/rz-super-portal[1]/div[1]/main[1]/section[1]/div[2]/rz-dynamic-widgets[1]/rz-widget-producer[1]/div[1]/section[1]/div[1]/app-slider[1]/div[1]/div[1]/rz-combine-scrollbar[1]/div[1]/div[1]/div[1]/ul[1]/li[4]/a[1]",
+      "targets": [
+        ["linkText=Холодильники", "linkText"],
+        ["css=.ng-star-inserted:nth-child(3) > .portal-section .portal-grid__cell:nth-child(1) .tile-cats__item:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Холодильники')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://bt.rozetka.com.ua/refrigerators/c80125/')]", "xpath:href"],
+        ["xpath=//rz-list-tile/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Холодильники')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "898900c9-aaac-4bf0-9fc6-bc1b8826ce80",
+      "comment": "",
+      "command": "click",
+      "target": "//span[contains(text(),'Мониторы')]",
+      "targets": [
+        ["css=rz-filter-section-autocomplete > .checkbox-filter:nth-child(1) > .checkbox-filter__item:nth-child(2) > .checkbox-filter__link", "css:finder"],
+        ["xpath=//a[contains(@href, '/refrigerators/c80125/producer=beko/')]", "xpath:href"],
+        ["xpath=//rz-filter-section-autocomplete/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c73cc32-d31a-4989-8a8a-5521b7e4dee4",
+      "comment": "",
+      "command": "assertText",
+      "target": "//span[contains(text(),'Мониторы')]",
+      "targets": [],
+      "value": "Мониторы"
+    }, {
+      "id": "5501f5e7-9c45-4437-8eb6-0fab42023f8a",
+      "comment": "",
+      "command": "click",
+      "target": "/html/body/app-root/div/div/rz-category/div/main/rz-catalog/div/div/section/rz-grid/ul/li[1]/rz-catalog-tile/app-goods-tile-default/div/div[2]",
+      "targets": [
+        ["css=.catalog-grid__cell:nth-child(2) .goods-tile__title", "css:finder"],
+        ["xpath=//li[2]/rz-catalog-tile/app-goods-tile-default/div/div[2]/a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Холодильник BEKO RCNA406E35ZXB')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3c41613-3c18-44c3-8418-d13f4bcdd67f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//a[contains(text(),'Фото')]",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1b18acc8-87bf-4216-83d3-11245db3765f",
+    "name": "Homework_Lesson25",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ad182f60-dc2e-4787-8faf-5b704f301f18", "9438b9bf-4cc4-420f-b83b-11f5beff5226"]
+  }],
+  "urls": ["https://rozetka.com.ua/"],
+  "plugins": []
+}
